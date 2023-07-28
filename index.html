@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student reg form</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: rgba(215, 217, 220, 0.034);
+    }
+    .container input[type="submit"]{
+        background-color: hsl(155, 88%, 59%);
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .container input[type="submit"]:hover{
+        background-color: #678967;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <form method="post" action="/">
+            <h1>Student Registration Form</h1>
+            <p>Please enter your details</p>
+            <hr>
+            <br>
+            <label>Name : </label>
+            <input type="text" id="name" placeholder="name" name="name">
+            <br/>
+            <br>
+            <label>Email: </label>
+            <input type="text" id="email" placeholder="email" name="email">
+            <br/>
+            <br>
+            <label >Age : </label>
+            <input type="text" placeholder="age" name="age" id="age">
+            <br/>
+            <br>
+            <label >Gender :</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <br/>
+            <br>
+            <label >Address :</label>
+            <input type="text" name="address" placeholder="address">
+            <br/>
+            <br>
+            <label>Password : </label>
+            <input type="password" placeholder="Password" name = "password"/>
+            <br/>
+            <br>
+            <input type="submit" name="submit">
+
+
+        </form>
+    </div>
+</body>
+</html>
